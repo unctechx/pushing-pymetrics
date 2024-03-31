@@ -25,8 +25,16 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: '#6d28d9', // Main purple
+          100: '#f3e8ff',     // Lightest tint
+          200: '#e9d5ff',     
+          300: '#d8b4fe',     
+          400: '#c084fc',     
+          500: '#a855f7',     // Lighter shade
+          600: '#9333ea',     // Default shade
+          700: '#7e22ce',     // Darker shade
+          800: '#6b21a8',     
+          900: '#581c87',     // Darkest shade
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -67,10 +75,20 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        gradient: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        gradient: 'gradient 15s ease infinite',
+      },
+      backgroundImage: {
+        // ... other background images ...
+
+        'hero-pattern': 'linear-gradient(to bottom, rgba(91, 33, 182, 0.7), rgba(47, 23, 99, 0.8)), url("/path-to-your-background-image.jpg")',
       },
     },
   },
