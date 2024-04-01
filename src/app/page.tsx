@@ -3,10 +3,6 @@ import Head from 'next/head';
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden bg-gray-100">
-      <Head>
-        <title>Traveler - Your Journey Begins Here</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
       {/* Navigation */}
       <nav className="bg-gradient-to-r from-purple-600 to-purple-700 text-white p-4 flex justify-between items-center shadow-md">
