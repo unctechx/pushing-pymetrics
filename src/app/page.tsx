@@ -15,10 +15,10 @@ export default function Home() {
           <h1 className="text-3xl font-bold">PyMetrics</h1>
         </div>
         <div className="space-x-4">
-          <a href="#" className="hover:text-purple-300 transition-colors">Login/Signup</a>
+        <a href="/auth/sign-up" className="hover:text-purple-300 transition-colors">Sign Up/In</a>
         </div>
       </nav>
-
+      
       {/* Starting Section */}
       <section className="flex-grow flex flex-col items-center justify-center bg-gradient-to-b from-purple-700 to-purple-800 text-white p-8 text-center bg-cover bg-center"
          style={{backgroundImage: "url('/hero-background.jpg')"}}>
