@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden bg-gray-100">
       {/* Navigation */}
-      <nav className="bg-gradient-to-r from-purple-600 to-purple-700 text-white p-4 flex justify-between items-center shadow-md">
+      <nav className="bg-gradient-to-r from-purple-200 to-purple-700 text-white p-4 flex justify-between items-center shadow-md">
         <div className="flex items-center space-x-2">
           <img src="/pymetrics-removebg-preview.png" className="h-8 w-8" alt="Logo" />
           <h1 className="text-3xl font-bold">PyMetrics</h1>
@@ -20,11 +20,11 @@ export default function Home() {
       </nav>
 
       {/* Starting Section */}
-      <section className="flex-grow flex flex-col items-center justify-center bg-gradient-to-b from-purple-700 to-purple-800 text-white p-8 text-center bg-cover bg-center"
-        style={{ backgroundImage: "url('/hero-background.jpg')" }}>
+      <section className="flex-grow flex flex-col items-center justify-center bg-gradient-to-b from-purple-200 to-purple-700 text-white p-8 text-center">
         <h1 className="text-5xl font-bold mb-4 text-black">A PyMetrics practice software.</h1>
         <p className="mb-2 text-lg text-black">Land your next consulting job.</p>
       </section>
+
 
       {/* About Section */}
       <section className="py-12 px-4 bg-white text-gray-800">

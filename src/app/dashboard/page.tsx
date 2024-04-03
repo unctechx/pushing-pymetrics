@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
-export default function Home() {
+export default function Dashboard() {
 
   return (
     <div className="flex flex-col min-h-screen overflow-hidden bg-gray-100">
       {/* Navigation */}
-      <nav className="bg-gradient-to-r from-purple-600 to-purple-700 text-white p-4 flex justify-between items-center shadow-md">
-        <div className="flex items-center space-x-2">
+      <nav className="bg-gradient-to-r from-purple-200 to-purple-700 text-white p-4 flex justify-between items-center shadow-md">
+        <div className="flex items-center space-x-3">
           <Link href="/">
             
               <img src="/pymetrics-removebg-preview.png" className="h-8 w-8" alt="Logo" />
@@ -15,10 +15,10 @@ export default function Home() {
           <h1 className="text-3xl font-bold">PyMetrics</h1>
         </div>
         <div className="space-x-4">
-          <Link href="/auth/sign-in" className="hover:text-purple-300 transition-colors">
+          <Link href="/auth/sign-in" className="hover:text-purple-300">
             Login
           </Link>
-          <Link href="/auth/sign-up" className="hover:text-purple-300 transition-colors">
+          <Link href="/auth/sign-up" className="hover:text-purple-300">
             Signup
           </Link>
         </div>
@@ -29,7 +29,7 @@ export default function Home() {
         {/* Box 1 */}
         <a
           href="/game"
-          className="bg-purple-500 hover:bg-purple-600 transition-colors text-white p-4 flex flex-col justify-between items-center rounded-lg shadow-xl hover:scale-110 transform transition-all relative overflow-hidden"
+          className="bg-purple-500 hover:bg-purple-600 text-white p-4 flex flex-col justify-between items-center rounded-lg shadow-xl hover:scale-110 transform transition-all relative overflow-hidden"
           style={{ height: 'calc(33vh - 3rem)' }}
         >
           <div>
