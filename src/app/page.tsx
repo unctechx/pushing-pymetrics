@@ -1,9 +1,8 @@
-import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden bg-gray-100">
-
       {/* Navigation */}
       <nav className="bg-gradient-to-r from-purple-600 to-purple-700 text-white p-4 flex justify-between items-center shadow-md">
         <div className="flex items-center space-x-2">
@@ -11,13 +10,18 @@ export default function Home() {
           <h1 className="text-3xl font-bold">PyMetrics</h1>
         </div>
         <div className="space-x-4">
-        <a href="/auth/sign-up" className="hover:text-purple-300 transition-colors">Sign Up/In</a>
+          <Link href="/auth/sign-in" className="hover:text-purple-300 transition-colors">
+            Login
+          </Link>
+          <Link href="/auth/sign-up" className="hover:text-purple-300 transition-colors">
+            Signup
+          </Link>
         </div>
       </nav>
-      
+
       {/* Starting Section */}
       <section className="flex-grow flex flex-col items-center justify-center bg-gradient-to-b from-purple-700 to-purple-800 text-white p-8 text-center bg-cover bg-center"
-         style={{backgroundImage: "url('/hero-background.jpg')"}}>
+        style={{ backgroundImage: "url('/hero-background.jpg')" }}>
         <h1 className="text-5xl font-bold mb-4 text-black">A PyMetrics practice software.</h1>
         <p className="mb-2 text-lg text-black">Land your next consulting job.</p>
       </section>
@@ -88,7 +92,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-purple-900 text-white py-6 px-8 text-center">
-        <p>&copy; {new Date().getFullYear()} PyMetrics. All rights reserved.</p>
+        <p> @ 2024 PyMetrics. All rights reserved.</p>
       </footer>
     </div>
   );
