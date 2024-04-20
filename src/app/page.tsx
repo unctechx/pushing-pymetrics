@@ -11,8 +11,10 @@ export default function Home() {
       {/* Navigation */}
       <nav className="bg-gradient-to-r from-purple-600 to-purple-700 text-white p-4 flex justify-between items-center shadow-md">
         <div className="flex items-center space-x-2">
-          <img src="/pymetrics-removebg-preview.png" className="h-8 w-8" alt="Logo" />
-          <h1 className="text-3xl font-bold">PyMetrics</h1>
+        <a href="/app/page">
+                    <img src="/pymetrics-removebg-preview.png" className="h-8 w-8" alt="Logo" />
+                    <h1 className="text-3xl font-bold">PyMetrics</h1>
+                </a>
         </div>
         <div className="space-x-4">
         <a href="/auth/sign-up" className="hover:text-purple-300 transition-colors">Sign Up/In</a>
